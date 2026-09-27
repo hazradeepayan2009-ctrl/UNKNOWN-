@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharadiya 2026 | Free Fire Tournament</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0f172a; /* Dark slate background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #e2e8f0;
+        }
+        .neon-orange {
+            color: #f97316;
+            text-shadow: 0 0 10px rgba(249, 115, 22, 0.7);
+        }
+        .bg-gaming {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            border: 1px solid #334155;
+        }
+        .btn-register {
+            background: linear-gradient(90deg, #ea580c, #f97316);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn-register:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.6);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="text-center py-12 border-b border-slate-700 bg-slate-900 bg-opacity-50">
+        <h1 class="text-5xl font-extrabold uppercase tracking-wider neon-orange mb-4">Sharadiya 2026</h1>
+        <p class="text-2xl font-bold text-gray-300">Mega Free Fire Squad Tournament</p>
+        <p class="mt-4 text-gray-400">Battle for Glory. Claim the Prize.</p>
+        <a href="#register" class="inline-block mt-8 btn-register text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg">Register Now</a>
+    </header>
+
+    <!-- Tournament Details Section -->
+    <section class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <!-- Details -->
+        <div class="bg-gaming p-8 rounded-xl shadow-lg">
+            <i class="fa-solid fa-trophy text-4xl neon-orange mb-4"></i>
+            <h3 class="text-2xl font-bold mb-2">Prize Pool</h3>
+            <p class="text-3xl font-extrabold text-green-400">₹300</p>
+            <ul class="mt-4 text-left space-y-2 text-gray-300">
+                <li><span class="font-bold text-yellow-400">1st Place:</span> ₹200</li>
+                <li><span class="font-bold text-gray-400">2nd Place:</span> ₹100</li>
+            </ul>
+        </div>
+        
+        <!-- Format -->
+        <div class="bg-gaming p-8 rounded-xl shadow-lg">
+            <i class="fa-solid fa-gamepad text-4xl neon-orange mb-4"></i>
+            <h3 class="text-2xl font-bold mb-2">Format</h3>
+            <ul class="mt-4 text-left space-y-2 text-gray-300">
+                <li><i class="fa-solid fa-users text-orange-500 mr-2"></i> <b>Total Teams:</b> 8 Maximum</li>
+                <li><i class="fa-solid fa-user-group text-orange-500 mr-2"></i> <b>Squad Size:</b> 4 Players</li>
+                <li><i class="fa-solid fa-money-bill text-orange-500 mr-2"></i> <b>Entry Fee:</b> ₹40 per team</li>
+            </ul>
+        </div>
+
+        <!-- Rules -->
+        <div class="bg-gaming p-8 rounded-xl shadow-lg border-red-900 border-2">
+            <i class="fa-solid fa-triangle-exclamation text-4xl text-red-500 mb-4"></i>
+            <h3 class="text-2xl font-bold mb-2 text-red-500">Strict Rules</h3>
+            <ul class="mt-4 text-left space-y-3 text-gray-300">
+                <li class="flex items-start"><i class="fa-solid fa-ban text-red-500 mt-1 mr-2"></i> <b>Panel Users Banned:</b> Any team found using hacks or panels will be instantly disqualified.</li>
+                <li class="flex items-start"><i class="fa-solid fa-ban text-red-500 mt-1 mr-2"></i> <b>Team-ups Banned:</b> Teaming up with opponents will result in a permanent ban for both squads.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section id="register" class="max-w-3xl mx-auto px-4 py-12">
+        <div class="bg-gaming p-8 rounded-xl shadow-2xl border border-orange-500/30">
+            <h2 class="text-3xl font-bold text-center neon-orange mb-8">Squad Registration</h2>
+            
+            <!-- Payment Info Note -->
+            <div class="bg-slate-800 p-4 rounded-lg mb-8 text-center border border-slate-600">
+                <p class="text-lg">Entry Fee: <span class="font-bold text-green-400">₹40 per team</span></p>
+                <p class="text-sm text-gray-400 mt-1">Please pay to the organizer's UPI and keep the screenshot ready before submitting.</p>
+            </div>
+
+            <form id="tournamentForm" class="space-y-6">
+                <!-- Team Name -->
+                <div>
+                    <label class="block text-gray-300 font-bold mb-2">Team Name</label>
+                    <input type="text" required class="w-full bg-slate-800 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500" placeholder="Enter your Squad Name">
+                </div>
+
+                <div class="border-t border-slate-700 my-6"></div>
+
+                <!-- Player 1 (Captain) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-orange-400 font-bold mb-2">Player 1 (Captain) - IGN</label>
+                        <input type="text" required class="w-full bg-slate-800 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500" placeholder="In-Game Name">
+                    </div>
+                    <div>
+                        <label class="block text-orange-400 font-bold mb-2">Player 1 - UID</label>
+                        <input type="number" required class="w-full bg-slate-800 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500" placeholder="Free Fire UID">
+                    </div>
+                </div>
+
+                <!-- Player 2 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-300 font-bold mb-2">Player 2 - IGN</label>
+                        <input type="text" required class="w-full bg-slate-800 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500" placeholder="In-Game Name">
+                    </div>
+                    <div>
+                        <label class="block text-gray-300 font-bold mb-2">Player 2 - UID</label>
+                        <input type="number" required class="w-full bg-slate-800 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500" placeholder="Free Fire UID">
+                    </div>
+                </div>
+
+                <!-- Player 3 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-300 font-bold mb-2">Player 3 - IGN</label>
+                        <input type="text" required class="w-full bg-slate-800 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500" placeholder="In-Game Name">
+                    </div>
+                    <div>
+                        <label class="block text-gray-300 font-bold mb-2">Player 3 - UID</label>
+                        <input type="number" required class="w-full bg-slate-800 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500" placeholder="Free Fire UID">
+                    </div>
+                </div>
+
+                <!-- Player 4 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-300 font-bold mb-2">Player 4 - IGN</label>
+                        <input type="text" required class="w-full bg-slate-800 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500" placeholder="In-Game Name">
+                    </div>
+                    <div>
+                        <label class="block text-gray-300 font-bold mb-2">Player 4 - UID</label>
+                        <input type="number" required class="w-full bg-slate-800 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500" placeholder="Free Fire UID">
+                    </div>
+                </div>
+                
+                <!-- Contact Number -->
+                <div class="mt-4">
+                    <label class="block text-gray-300 font-bold mb-2">Captain's WhatsApp Number</label>
+                    <input type="number" required class="w-full bg-slate-800 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500" placeholder="For Room ID & Password">
+                </div>
+
+                <button type="submit" class="w-full btn-register text-white font-bold py-4 rounded-lg text-xl uppercase tracking-wide mt-8">
+                    Submit Registration
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 border-t border-slate-700 text-slate-400 mt-12">
+        <p>&copy; 2026 Sharadiya Free Fire Tournament. All rights reserved.</p>
+    </footer>
+
+    <!-- Simple Script for Form Submit -->
+    <script>
+        document.getElementById('tournamentForm').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            // In a real website, this would send data to a server or Google Form.
+            alert('Registration Submitted! Please ensure you have sent the ₹40 Entry Fee via UPI.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
